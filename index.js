@@ -50,7 +50,7 @@ QueryBuilder.prototype.then = function (onFulfilled, onRejected) {
             .from(subjectAlias)
             .select(
                 this.client.raw(
-                    `array_agg("${subjectAlias}".*::${subjectRelation}) "${subjectRelation}"`
+                    `array_agg(distinct "${subjectAlias}".*::${subjectRelation}) "${subjectRelation}"`
                 )
             )
             .groupByRaw('true')
