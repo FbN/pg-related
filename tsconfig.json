@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "checkJs": true,
+        "target": "esnext",
+        "module": "esnext",
+        "allowJs": true,
+        "jsx": "preserve",
+        "noEmit": true,
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        "lib": ["ESNext", "DOM", "DOM.Iterable", "ScriptHost"],
+        "maxNodeModuleJsDepth": 10,
+        "downlevelIteration": true,
+        "moduleResolution": "node",
+        "paths": {
+            "@vista/iter-core": ["../iter-core"]
+        }
+    },
+    "files": ["index.js"]
+}

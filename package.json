@@ -1,0 +1,27 @@
+{
+    "name": "pg-related",
+    "version": "0.0.1",
+    "keywords": [
+        "knex",
+        "postgres",
+        "relations"
+    ],
+    "packageManager": "yarn@3.2.0",
+    "repository": "https://github.com/FbN/pg-related",
+    "type": "module",
+    "description": "Query relatated data with knex (node-postgres)",
+    "main": "index.js",
+    "author": "Fabiano Taioli <ftaioli@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "dotenv": "^16.0.0",
+        "knex": "*",
+        "pg": "^8.7.3"
+    },
+    "peerDependencies": {
+        "knex": "*"
+    },
+    "dependencies": {
+        "pg-tuple-types": "^0.0.1"
+    }
+}
